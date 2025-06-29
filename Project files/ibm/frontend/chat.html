@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistant Chat | Smartcity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-logo">🌱🏙️</div>
+    <ul>
+      <li><a href="index.html"><span class="icon">🏠</span> Home</a></li>
+      <li><a href="chat.html" class="active"><span class="icon">💬</span> Assistant</a></li>
+      <li><a href="upload.html"><span class="icon">📄</span> Upload</a></li>
+      <li><a href="kpi.html"><span class="icon">📊</span> KPIs</a></li>
+      <li><a href="tips.html"><span class="icon">🌿</span> Eco Tips</a></li>
+      <li><a href="feedback.html"><span class="icon">✉️</span> Feedback</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <section class="card chat-card">
+      <h2>Ask the Sustainability Assistant</h2>
+      <form id="chat-form" action="/chat" method="POST">
+        <label for="prompt">Your Question</label>
+        <textarea id="prompt" name="prompt" rows="4" required placeholder="Ask about sustainability, city KPIs, eco tips..."></textarea>
+        <button type="submit" class="button">Send</button>
+      </form>
+      <div id="chat-response" class="response-container" aria-live="polite">
+        <!-- AI response will appear here -->
+      </div>
+    </section>
+    <div id="toast" class="toast" style="display:none;">Message sent!</div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | Smartcity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-logo">🌱🏙️</div>
+    <ul>
+      <li><a href="index.html"><span class="icon">🏠</span> Home</a></li>
+      <li><a href="chat.html"><span class="icon">💬</span> Assistant</a></li>
+      <li><a href="upload.html"><span class="icon">📄</span> Upload</a></li>
+      <li><a href="kpi.html"><span class="icon">📊</span> KPIs</a></li>
+      <li><a href="tips.html"><span class="icon">🌿</span> Eco Tips</a></li>
+      <li><a href="feedback.html" class="active"><span class="icon">✉️</span> Feedback</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <section class="card feedback-card">
+      <h2>Submit Feedback</h2>
+      <form id="feedback-form" action="/feedback" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="">-- Select a category --</option>
+          <option value="General">General</option>
+          <option value="Bug">Bug</option>
+          <option value="Feature Request">Feature Request</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Type your feedback..."></textarea>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </section>
+    <div id="toast" class="toast" style="display:none;">Feedback submitted!</div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html> 

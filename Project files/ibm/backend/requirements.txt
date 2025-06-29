@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+pinecone-client
+httpx
+pydantic
+python-multipart
+pandas
+scikit-learn 

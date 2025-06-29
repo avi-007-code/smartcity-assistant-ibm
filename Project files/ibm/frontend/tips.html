@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Tips Search | Smartcity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-logo">🌱🏙️</div>
+    <ul>
+      <li><a href="index.html"><span class="icon">🏠</span> Home</a></li>
+      <li><a href="chat.html"><span class="icon">💬</span> Assistant</a></li>
+      <li><a href="upload.html"><span class="icon">📄</span> Upload</a></li>
+      <li><a href="kpi.html"><span class="icon">📊</span> KPIs</a></li>
+      <li><a href="tips.html" class="active"><span class="icon">🌿</span> Eco Tips</a></li>
+      <li><a href="feedback.html"><span class="icon">✉️</span> Feedback</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <section class="card tips-card">
+      <h2>Search Eco-Friendly Tips</h2>
+      <form id="tips-form" action="/search-tips" method="POST">
+        <label for="keyword">Enter a topic or keyword</label>
+        <input type="text" id="keyword" name="keyword" required placeholder="e.g. recycling, water, energy">
+        <button type="submit" class="button">Search</button>
+      </form>
+      <div id="tips-results" class="results-card">
+        <!-- Eco tips will appear here -->
+      </div>
+    </section>
+    <div id="toast" class="toast" style="display:none;">Search complete!</div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html> 

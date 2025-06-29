@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Policy/KPI File | Smartcity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-logo">🌱🏙️</div>
+    <ul>
+      <li><a href="index.html"><span class="icon">🏠</span> Home</a></li>
+      <li><a href="chat.html"><span class="icon">💬</span> Assistant</a></li>
+      <li><a href="upload.html" class="active"><span class="icon">📄</span> Upload</a></li>
+      <li><a href="kpi.html"><span class="icon">📊</span> KPIs</a></li>
+      <li><a href="tips.html"><span class="icon">🌿</span> Eco Tips</a></li>
+      <li><a href="feedback.html"><span class="icon">✉️</span> Feedback</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <section class="card upload-card">
+      <h2>Upload Policy or KPI File</h2>
+      <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Select a .txt or .csv file</label>
+        <input type="file" id="file" name="file" accept=".txt,.csv" required>
+        <button type="submit" class="button">Upload</button>
+      </form>
+      <div id="summary-section" class="summary-section">
+        <h3>Summary</h3>
+        <div class="summary-content"><!-- Summary will appear here --></div>
+      </div>
+      <div id="anomaly-alert" class="anomaly-alert" style="display:none;">
+        <strong>⚠️ Anomaly Detected!</strong> <span class="anomaly-message"></span>
+      </div>
+    </section>
+    <div id="toast" class="toast" style="display:none;">File uploaded!</div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html> 
