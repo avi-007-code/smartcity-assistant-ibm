@@ -4,25 +4,25 @@ A modular dashboard for interacting with urban sustainability data, powered by a
 
 ---
 
-## 📁 Project Structure
+🚀 Features
+🔍 Policy Summarization — Upload policies (.txt or .csv) and get concise summaries.
 
-```
-ibm/
-│
-├── frontend/
-│   ├── index.html
-│   ├── chat.html
-│   ├── upload.html
-│   ├── kpi.html
-│   ├── tips.html
-│   ├── feedback.html
-│   └── styles.css
-│
-└── readme.md
-```
+🔥 KPI Monitoring — View real-time city KPIs like air quality, water usage, and energy.
+
+💬 Sustainability Chat — Ask AI about eco-friendly practices, policies, and city stats.
+
+🌿 Eco-Friendly Tips — Get tips by searching with relevant keywords.
+
+🗣️ Citizen Feedback — Submit feedback categorized by issue or suggestion.
+
+🧠 Anomaly Detection — Identify anomalies in uploaded datasets.
 
 ---
 
+🧠 AI Model
+✅ Model Used: ibm-granite/granite-3.3-2b-instruct via Hugging Face API.
+
+---
 ## 🖥️ Frontend Overview
 
 - Pure HTML5 + CSS3 (no JS frameworks)
@@ -42,16 +42,3 @@ ibm/
 3. **Open**: `http://localhost:8080/index.html` in your browser
 
 ---
-
-## Next Steps
-
-The following frontend files will be created:
-- `frontend/index.html`
-- `frontend/chat.html`
-- `frontend/upload.html`
-- `frontend/kpi.html`
-- `frontend/tips.html`
-- `frontend/feedback.html`
-- `frontend/styles.css`
-
-Each file will be modular, well-documented, and ready for backend integration.
